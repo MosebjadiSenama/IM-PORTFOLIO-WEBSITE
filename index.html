@@ -16,27 +16,18 @@
 </head>
 <body>
   <!--Navigation bar-->
-  <section>
-    <nav>
-      <ul class="navbar">
-        <li class="nav-links">
-          <a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </section>  
+ <div id="navbar-container"></div>
 
 <!--Intro-->
 <div class="hero-section">
-  <p class="intro">Hi, I am <span class="highlight">Mosebjadi Lucia Senama</span> an,<p/>
-       <h1 class="ux-ui"> Aspriring <span class="title"> UX/UI Designer and Front-end Developer</span></h1>
+  <p class="intro">Hi, I am <span class="highlight">Mosebjadi Lucia Senama</span> an,</p>
+       <h1 class="ux-ui"> Aspiring <span class="title"> UX/UI Designer and Front-end Developer</span></h1>
        <p class="hero-description">Blending psychology and design for meaningful digital experiences.</p>
        <div class="buttons">
         <button class="hireme">Hire me</button>
         <button class="discover" id="about" >Discover my journey</button>
-      </div></div>
+      </div>
+    </div>
     
 
       <!--About section-->
@@ -310,8 +301,8 @@
 <!--right side-->
 <form class="input-field">
   <div class="top-inputs">
-  <input placeholder=" Your name">
-  <input placeholder=" Your Email address">
+  <input placeholder="Your name">
+  <input placeholder="Your Email address">
   </div>
   <div class="subject">
     <input placeholder="Subject" >
@@ -319,20 +310,35 @@
    
   <div>
   <textarea class="message" placeholder="Write your message"></textarea>
-  </textarea>
 </div>
-<button class="send-message">Send message &#8594</button>
+<button  type="submit"  class="send-message">Send message &#8594</button>
+<div id="success-popup">
+  <div class="popup-card"> 
+    <div class=" success-icon"> &#x2713;</div>
+
+    <h2>Message sent successfully!</h2>
+
+    <P>Thank you for reaching out
+    </P>
+
+  </div>
+  </div>
+  
+  
+</div>
 </form>
 </div>
 </div>
 
 </section>
 
-       
+ 
+<!--scroll up button-->
+<button id="scroll-up"> &uarr; </button>       
        
   <div class="footer-1">
   <footer> &copy Mosebjadi Lucia Senama. All rights reserved.</footer>
-</div>    
-  
+</div> 
+
 </body>
 </html>

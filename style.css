@@ -27,6 +27,11 @@ body{
   
 }
 
+.menu-toggle{
+    display: none;
+   
+}
+
  .navbar a{
   text-decoration: none ;
   color: black;
@@ -80,7 +85,6 @@ text-align: center;
 margin: 0 auto;
 max-width: 1000px;
 padding-top: 100px;
-
 
 
 }
@@ -559,6 +563,64 @@ letter-spacing: -1px;
   
 }
 
+#success-popup{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+
+    display: none;
+    z-index: 9999;
+
+
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+
+    background: white;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 4px 12pc rgba(0, 0, 0, 0.15);
+
+
+}
+
+.popup-card{
+    background:white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.success-icon{
+    width: 80px;
+    height: 80px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background: #1d47e0;
+    color: white;
+    font-size: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.popup-card h2{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.popup-card p{
+    color: grey;
+}
+
+
+
 .contact-left{
     width: 35%;
 }
@@ -747,7 +809,7 @@ textarea::placeholder{
 
     padding:50px;
     border-radius: 24px;
-    box-shadow:0 4px 2px rgba(8, 8, 8, 0.06);ab
+    box-shadow:0 4px 2px rgba(8, 8, 8, 0.06);
     
 }
 
@@ -925,12 +987,16 @@ textarea::placeholder{
 
 /*PROJECTS PAGE*/
 
+.heading-projects{
+    margin-top: 130px;
+}
+
 .heading-projects  p{
-    display: flex;
-    justify-content: center;
+    
     width: 800px;
-    margin: 0 auto; 
-    margin-bottom: 80px;  
+    margin: 0 auto 8px auto; 
+    max-width: 90%;
+    text-align: center;
 }
 
 .design-is-not{
@@ -940,6 +1006,8 @@ textarea::placeholder{
     margin: 0 auto;
     font-weight: bold;   
     color: #1E40AF;
+
+    margin-bottom: 5px;
 }
 
 .project-grid1{
@@ -1069,6 +1137,11 @@ textarea::placeholder{
     font-size: 12px;
    
 
+}
+
+.person-goals,
+.person-fustrations{
+    width: 100%;
 }
 
 .view-casestudy-sassa:hover,
@@ -1505,6 +1578,7 @@ margin-top: 40px;
   
 }
 
+
 .design-process{
     display: flex;
     gap: 80px;
@@ -1844,13 +1918,13 @@ margin-top: 40px;
     position: absolute;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
+    display: block;
 
-    top: -25px;
+    top: -30px;
     left: 20px;
 
-    margin-bottom: 10px;
+    border-radius: 50%;
+    object-fit: cover;
   
 }
 
@@ -1983,7 +2057,7 @@ margin-top: 40px;
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    margin-left: -200px;
+   
     margin-top: 50px;
     
    
@@ -2041,8 +2115,7 @@ margin-top: 40px;
 
 .mock-img2{
     position: relative;
-    margin-left: -700px;
-    margin-bottom: -300px;
+    margin: 0;
     
 
 }
@@ -2727,4 +2800,6779 @@ width: 600px;
     margin-top: 100px;
 }
 
+#scroll-up{
+    background-color: #1d47e0;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
+
+#scroll-up:hover{
+    background-color: #4e7bd6;
+
+}
+
+/*=============================================================================================================================================================================
+                                                                                 RESPONSIVE DESIGN 
+================================================================================================================================================================================*/
+
+/*=========================
+TABLET
+===========================*/
+
+
+/*============================================================================================================================================================================
+                                                                     INDEX.HTML
+==============================================================================================================================================================================*/
+
+
+
+@media screen and ( min-width:769px) and (max-width:1024px){
+
+
+    body{
+        font-size: 14px;
+    }
+
+    
+    .hero-section{
+        width: 90%;
+        padding-top: 120px;
+    }
+
+   
+    .about-content{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    
+    .right-side{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex: 0.8;
+    }
+
+    .left-side{
+        flex: 1.4;
+    }
+
+    .about-me{
+        width: 100%;
+    }
+
+    .divider{
+        width: 80%;
+        margin: 25px auto;
+    }
+
+  
+
+    .tool-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .tool-card{
+        width: auto;
+        min-width: 140px;
+       
+    }
+
+    .heading1{
+        font-size: 24px;
+    }
+
+    .about-me{
+        width: 280px;
+    }
+
+    .profile-image{
+        max-width: 100%;
+        width: 260px;
+        height: auto;
+       
+    }
+
+    .skills-item,
+    .numbers{
+        font-size: 12px;
+
+    }
+
+    .skills-section{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        width: 100%;
+
+    }
+
+    .skills-item{
+        text-align: center;
+    }
+    .project-top{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .projects-description{
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .hero-description{
+        font-size: 14px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-card{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact-card:before{
+        display: none;
+    }
+
+    .contact-left,
+    .input-field{
+        width: 100%;
+    }
+
+    .profile-image{
+    filter: grayscale(0%);
+  
+}
+
+.projects-section{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.p-description{
+    font-size: 12px;
+    line-height: 1.4;
+}
+.project-title{
+    font-size: 18px;
+}
+
+.p-type p{
+    font-size: 8px;
+    padding: 4px 8px;
+}
+
+.intro{
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+
+}
+
+.featured-projects{
+    font-size: 32px;
+}
+
+.projects-description{
+    font-size: 14px;
+}
+
+.view-casestudy,
+.View-casestudy2,
+.view-casestudy3{
+    font-size: 14px;
+}
+
+.ux-ui{
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    line-height: 1.35;
+    margin-bottom: 10px;
+   
+}
+
+.title{
+    font-size: 34px;
+    display: inline;
+}
+
+.project-container{
+    width: 230px;
+  
+  
+
+}
+
+/*============================================================================================================================================================================
+                                                                     ABOUT ME PAGE  TABLET
+==============================================================================================================================================================================*/
+
+.about-me-h1{
+  font-size: 42px;  
+  text-align: center;
+  width: 100%;
+}
+
+
+.about-me-p{
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-me{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.about-me-card2{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.my-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+
+}
+
+.my-image2{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.right-side-aboutme{
+    width: 100%;
+    flex: 1;
+}
+
+
+.about-me-description{
+    font-size: 14px;
+    line-height: 1.8;
+    width: 90%;
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*My story timeline*/
+
+.timeline-item{
+    width: 90%;
+    gap: 20px;
+    padding: 20px;
+}
+
+.timeline-left, 
+.timeline-right{
+    width: 45%;
+}
+
+.timeline-centre{
+    width: 50px;
+}
+
+.design{
+    height: 220px;
+}
+
+.heading2{
+    font-size: 18px;
+}
+
+.timeline-description{
+    font-size: 13px;
+}
+
+.main-line{
+    height: 78%;
+}
+
+/*============================================================================================================================================================================
+                                                                     TABLET PROJECTS PAGE
+==============================================================================================================================================================================*/
+.heading-projects{
+    width: 90%;
+    margin: 120px auto 60px;
+}
+
+.heading{
+    font-size: 42px;
+}
+
+.design-is-not{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.heading-projects p{
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.project-grid1{
+    width: 95%;
+    max-width: 850px;
+
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-information{
+    width: 50%;
+}
+
+.project-title1{
+    font-size: 20px;
+}
+
+.image-project{
+    width: 45%;
+}
+
+.project-description{
+    font-size: 13px;
+}
+
+.project-buttons{
+    flex-wrap: wrap;
+}
+
+.projects-cta{
+    width: 90%;
+    padding: 25px;
+}
+
+.cta-paragraph{
+    font-size: 14px;
+}
+
+
+/*============================================================================================================================================================================
+                                                                     TABLET SASSA CASESTUDY
+==============================================================================================================================================================================*/
+
+
+.intro-section{
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+   
+}
+
+.case-hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 40px;
+
+    text-align: left;
+}
+
+.hero-left{
+    flex: 1;
+}
+
+.hero-right{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.laptop-image{
+    width: 100%;
+    max-width: 450px;
+
+    margin: 0  !important;
+    top: auto;
+}
+
+.view-figma{
+    margin-left: 0 !important;
+}
+
+.project1-infor{
+   
+    max-width: 900px;
+
+    margin: 20px auto;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 60px;
+}
+
+.about-sassa{
+   
+    max-width: 900px;
+
+    margin: 80px auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 40px;
+}
+
+
+.goals{
+    
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+
+.design-process{
+    
+    max-width: 1100px;
+    margin: 80px auto;
+}
+
+.process-grid{
+    
+    width: 100%;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.process-card{
+    min-height: auto;
+}
+
+.Research-information-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+}
+
+.research-cards{
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.all-cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+}
+
+
+
+.Persona-cards{
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+   
+}
+
+.persona-info{
+    width: 100%;
+}
+
+.reviews-container{
+   
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: auto;
+}
+
+.wireframes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.wireframes-img{
+    width: 100%;
+}
+
+.screens-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.screens-card img{
+    width: 100%;
+    height: auto;
+}
+
+.phone-review, 
+.circle-1, 
+.circle-2,
+.circle-3{
+    display: none;
+}
+
+.review-1, 
+.review-2, 
+.review-3, 
+.review-4{
+
+   position: static;
+   width:100%;
+   max-width: none;
+   min-height: 180px;
+
+   padding: 20px;
+   box-sizing: border-box;
+   
+}
+
+.phone-avatar{
+    width: 50px;
+    height: 50px;
+}
+
+.project1-infor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.user-persona1{
+    width: 40%;
+}
+
+.Persona-cards{
+ width: 100%;
+ max-width: 250px;
+
+}
+
+
+
+
+.sassa-page{
+    width: 100%;
+    max-width: 1000px;
+
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+
+
+.review-1,
+.review-2,
+.review-3,
+.review-4{
+    position: static;
+}
+
+.review-1 img,
+.review-2 img,
+.review-3 img, 
+.review-4 img{
+
+    position: static;
+    width: 60px;
+    height: 60px;
+
+    margin-bottom: 10px;
+
+}*/
+
+/*============================================================================================================================================================================
+                                                                   PRODEMIC TABLET
+==============================================================================================================================================================================*/
+.intro-section{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.case-hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+    padding: 40px;
+}
+
+.hero-left,
+.hero-right3{
+    flex: 1;
+    min-width: 0;
+}
+
+.prodemic-website2,
+.sassa-w2{
+    font-size: 70px;
+    line-height: 0.95;
+    margin: 0;
+}
+
+.hero-right3{
+
+    min-width: 0;
+    width: 100%;
+}
+
+.case-description{
+    font-size: 15px;
+    max-width: 300px;
+}
+
+.view-figma2{
+    margin: 25px 0 0 0;
+}
+
+.prodemic-image{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    
+}
+
+.circle{
+    width: 350px;
+    height: 350px;
+
+    top: 65%;
+}
+
+.design-line{
+    display: none;
+}
+
+.project3-infor{
+    width: 95%;
+    margin: 30px auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.about-sassa{
+    width: 95%;
+    margin: 80px auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+.analysis-section{
+    width: 95%;
+    margin: 0 auto;
+    
+    
+}
+
+
+.image-card{
+    margin: auto;
+}
+
+.whole-infor-card{
+    width: 100%;
+}
+
+.user-persona-prodemic{
+    width: 95%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.user-persona-card{
+    width: 100%;
+    height: auto;
+}
+
+.persona-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.section-screens{
+    width: 95%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.ui-screens{
+    width: 100%;
+    height: auto;
+}
+
+.screen-description{
+    width: 95%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+.info-item-3{
+    width: auto;
+    min-height: 120px;
+    padding: 20px;
+}
+
+.analysis-image{
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+
+.app-infor{
+    display: grid;
+    grid-template-columns:100px 180px 180px;
+    gap: 40px;
+    align-items: center;
+}
+
+.app-logo-div{
+    text-align: center;
+    
+}
+
+.list-name{
+    min-height: 90px;
+   
+}
+.prodemic-page{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*============================================================================================================================================================================
+                                                                    E-COMMERCE TABLET
+==============================================================================================================================================================================*/
+.case-hero{
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero-left{
+    width: 100%;
+}
+
+.hero-right2{
+    min-width: auto;
+    width: 100%;
+}
+.prodemic-website3,
+.sassa-w3{
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+}
+
+.case-description{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.view-figma3{
+    margin: 30px auto;
+    display: block;
+}
+
+.ubuntu-image3{
+    width: 100%;
+    max-width: 700px;
+    margin: 0;
+}
+
+.mock-img2{
+    margin: 0;
+}
+
+.project1-infor{
+    gap: 60px;
+    height: auto;
+    padding: 20px;
+}
+
+.about-sassa{
+    width: 90%;
+    gap: 40px;
+}
+
+
+.goal-card4{
+   width: auto;
+}
+
+.design-process-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: auto;
+}
+
+.design-line-4{
+    display: none;
+}
+
+.info-item-4{
+    width: auto;
+}
+
+.user-persona-prodemic{
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-persona-card{
+    width: 90%;
+}
+
+.persona-content{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.screens-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.screens-card img{
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+}
+
+.about-e-commerce-p,
+.about-project-container3{
+    margin-left: 0;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+}
+
+
+/*=========================
+MOBILE
+===========================*/
+
+/*============================================================================================================================================================================
+                                                                     MOBILE INDEX.HTML
+==============================================================================================================================================================================*/
+
+
+
+@media screen  and (max-width:768px){
+
+
+
+.hero-section{
+  width: 95%;
+  max-width: 500px;
+  margin: 0 auto 50px;
+  padding: 80px 20px 0;
+  text-align: center;
+}
+
+.navbar a{
+    font-size: 14px;
+    color: white;
+
+}
+
+.navbar a.active{
+    background: white;
+    color: #0f4fa8;
+    padding: 12px 16px;
+    border-radius: 10px;
+
+    display: block;
+    width: 200px;
+    text-decoration: none;
+
+}
+
+
+.intro{
+    font-size: 14px !important;
+    margin-bottom: 20px;
+    line-height: 1.5;
+
+}
+
+.ux-ui{
+    font-size: 22px !important;
+    line-height: 1.3;
+    margin-top: 40px;
+   
+}
+
+.title{
+    font-size: 22px !important;
+}
+
+
+.hero-description{
+    font-size: 12px;
+    line-height: 1.6;
+    width: 95%;
+    margin: auto;
+}
+
+
+.buttons{
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.hireme,
+.discover{
+    width: 100%;
+    max-width: 280px;
+}
+
+.about-card{
+    width: 90%;
+    max-width: 360px;
+    padding: 20px;
+    margin:0 auto;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.heading1{
+    font-size: 16px !important;
+    text-align: center;
+}
+
+.about-me{
+   font-size: 12px;
+   margin: auto;
+   max-width: 280px;
+   margin: 0 auto 20px;
+   text-align: center;
+   line-height: 1.6;
+
+}
+
+.divider{
+    width: 100%;
+}
+
+.skills-section{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+   width: 100%;
+   text-align: center;
+}
+
+.skills-item{
+    font-size: 10px !important;
+    text-align: left;
+}
+
+.tool-container{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+   
+}
+
+.tool-card{
+   padding: 6px;
+   
+   
+}
+
+.tool-card img{
+    width: 20px;
+    height: 20px;
+}
+
+.tool-info{
+    text-align: center;
+}
+
+.tool-info h4{
+    font-size: 10px;
+}
+
+.tool-info p {
+    font-size: 9px;
+}
+.right-side{
+    width: 100%;
+}
+
+.profile-image{
+    width: 140px;
+    height: auto;
+    margin: 20px auto 0;
+    display: block;
+}
+
+.projects-section{
+    width: 95%;
+}
+
+.featured-projects{
+    font-size: 30px;
+}
+
+.project-description{
+    width: 100%;
+}
+
+.project-grid{
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 80px;
+
+}
+
+.project-container{
+    width: 100%;
+    max-width: 360px;
+}
+
+.image-p{
+    height: auto;
+}
+
+.view-all-p{
+    width: 100%;
+    max-width: 260px;
+}
+
+.contact-card{
+    width: 95%;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px auto;
+}
+
+
+.contact-card:before{
+    display: none;
+
+}
+.project-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+.contact-left,
+.input-field{
+    width: 100%;
+}
+
+.get-in-touch{
+    font-size: 30px;
+}
+
+.contact-description{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.dc{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.icons{
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  
+}
+
+.contact-left{
+    margin-bottom: 0 !important;
+  
+}
+
+.input-field{
+    margin-top: 0 !important;
+   
+}
+.top-inputs{
+    flex-direction: column;
+    gap: 15px;
+}
+
+.send-message{
+    width: 100%;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.footer-1{
+    text-align: center;
+    padding: 20px;
+}
+.project-info{
+    text-align: center;
+}
+
+.p-type{
+    justify-content: center;
+}
+.input-field input::placeholder,
+.message::placeholder{
+    font-size: 12px;
+
+}
+
+
+
+.menu-toggle{
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+
+    background: #F5F5F5;
+    width: 50px;
+    height: 50px;
+    color: black;
+
+    border: 2px;
+    border-radius: 10px;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: -300px;  /*hiddden off screen*/
+
+    width: 220px;
+    height: 100vh;
+
+    background: #054672;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding-top: 100px;
+    padding-left: 30px;
+    gap: 30px;
+
+    transition: 0.3s ease;
+
+    z-index: 1001;   
+}
+
+.navbar.show{
+    left: 0;
+}
+
+.divider{
+    display: none;
+}
+
+.heading1{
+    font-size: 16px !important;
+}
+
+.contact-left{
+    text-align: center;
+}
+
+.p-description{
+    font-size: 12px;
+}
+
+.View-casestudy2{
+    font-size: 9px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+    flex-wrap: nowrap;
+    margin-top: 0 !important;
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+
+}
+
+.contact-item{
+    width: 50px;
+    text-align: center;
+}
+
+.icon-name{
+    font-size: 12px;
+}
+
+.input{
+    height: 45px;
+} 
+.profile-image{
+    filter: grayscale(0%);
+}
+
+.footer-1{
+    margin-top: 10px;
+}
+
+/*============================================================================================================================================================================
+                                                                     ABOUT ME PAGE
+==============================================================================================================================================================================*/
+
+.about-me-h1{
+ font-size: 32px;  
+ text-align: center; 
+}
+
+.about-me-p{
+    text-align: center;
+    font-size: 14px;
+    padding: 0 20px;
+    margin-top: -20px;
+}
+
+.about-me-card2{
+    width: 90%;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.my-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.my-image2{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.right-side-aboutme{
+    width: 100%;
+}
+
+.about-me-description{
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.8;
+
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+
+/*My story timeline*/
+
+.my-story-h2{
+    font-size: 40px;
+}
+
+.main-line{
+    display: none;
+}
+
+
+.timeline-item{
+    flex-direction: column;
+    width: 95%;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+
+    order: 1;
+    width: 100%;
+    margin-bottom: 60px;
+
+}
+
+.timeline-right{
+    order: 2;
+    width: 100%;
+}
+
+
+.timeline-right,
+.timeline-left{
+    width: 100%;
+}
+
+.timeline-centre{
+    display: none;
+}
+
+.design{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.heading1{
+    font-size: 24px;
+}
+
+.heading2{
+    font-size: 18px;
+}
+
+.timeline-description{
+    font-size: 14px;
+}
+
+.year{
+    margin: 0 auto;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+
+
+/*============================================================================================================================================================================
+                                                                     MOBILE PROJECTS PAGE
+==============================================================================================================================================================================*/
+
+.heading-projects{
+    margin-top: 120px;
+    width: 95%;
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.heading{
+    font-size: 38px;
+}
+
+.design-is-not{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.heading-projects p{
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/*PROJECT CARDS*/
+.project-grid1{
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.project-container1{
+    flex-direction: column;
+    width: 95%;
+    max-width: 500px;
+    padding: 20px;
+    gap: 20px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-information{
+    width: 100%;
+    text-align: center;
+}
+
+.image-project{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    
+}
+
+.title-row{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-title1{
+    font-size: 22px;
+}
+
+.project-description{
+    max-width: 100%;
+    font-size: 15px;
+}
+
+.p-type{
+    justify-content: center;
+}
+
+
+.project-buttons{
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.view-p{
+    width: 100%;
+    max-width: 280px;
+}
+
+
+/*BOTTOM CTA*/
+
+.projects-cta{
+    width: 95%;
+    max-width: 500px;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.left-cta{
+    flex-direction: column;
+}
+
+.cta-paragraph{
+    margin-top: 10px;
+}
+
+.lets-work{
+    display: inline;
+}
+
+
+
+/*============================================================================================================================================================================
+                                                                     MOBILE SASSA CASESTUDY
+==============================================================================================================================================================================*/
+
+.case-hero{
+   width: 92%;
+   margin: 0 auto;
+
+   display: flex;
+   flex-direction: column;
+
+   align-items: center;
+   justify-content: center;
+
+   text-align: center;
+
+   padding: 20px;
+   box-sizing: border-box;
+}
+
+.hero-left,
+.hero-right, 
+.hero-right2,
+.hero-right3{
+    width: 100%;
+    max-width: 0;
+}
+
+.sassa-website,
+.sassa-w{
+    font-size: 42px;
+    line-height: 1.1;
+}
+
+.laptop-image{
+    width: 100%;
+    max-width: 300px;
+
+    margin: 20px auto 0 auto !important;
+    display: block;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+}
+
+.view-figma,
+.view-figma2,
+.view-figma3{
+    margin: 20px auto;
+    display: block;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.project1-infor{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    margin: 20px auto;
+}
+
+.project1-infor,
+.project3-infor{
+    flex-direction: column;
+    gap: 20px;
+    min-height: auto;
+    padding: 20px;
+}
+
+.about-sassa{
+    width: 95%;
+    margin: 60px auto;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+
+.goal-card,
+.goal-card-2,
+.goal-card4{
+    width: 100%;
+}
+
+.process-grid{
+    grid-template-columns: 1fr;
+}
+
+.Research-information-section{
+    flex-direction: column;
+    align-items: center;
+}
+
+.research-cards{
+    width: 90%;
+}
+
+.all-cards{
+    flex-direction: column;
+    align-items: center;
+}
+
+.Persona-cards{
+    margin:0 auto;
+    text-align: left;
+}
+
+
+.reviews-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+}
+.circle,
+.circle4, 
+.blob{
+    display: none;
+}
+
+.about-project-container3,
+.app-infor, 
+.h2-screens,
+.screen-description{
+    margin-left: 0;
+}
+
+.circle-1,
+.circle-2,
+.circle-3,
+.phone-review{
+    display: none;
+}
+
+.review-1,
+.review-2,
+.review-3,
+.review-4{
+    position: static;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.wireframes{
+    flex-direction: column;
+    align-items: center;
+}
+
+.wireframes-img{
+    width: 90%;
+}
+
+.user-reviews-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screens-card{
+    flex-direction: column;
+    align-items: center;
+}
+
+.screens-card img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.reflection-section{
+    width: 95%;
+}
+
+.h2-about{
+    font-size: 26px;
+}
+
+.goals,
+.about-sassa,
+.design-process,
+.user-research,
+.user-Personas-section,
+.user-reviews-section,
+.wireframes,
+.final-ui-section,
+.reflection-section{
+    width: 95% !important;
+    max-width: 600px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.process-grid,
+.Research-information-section,
+.all-cards,
+.wireframes,
+.screens-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+.h2-about,
+.h2-about3,
+.design-process h2,
+.user-Personas-section h2,
+.user-reviews-section h2,
+.final-ui-section h2,
+.reflection-section h2{
+    text-align: center;
+
+}
+
+.about-project-container,
+.about-project-container2{
+    width: 100% !important;
+    max-width: 100% !important;
+}
+    
+/*============================================================================================================================================================================
+                                                                     PRODEMIC
+==============================================================================================================================================================================*/
+.case-hero{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-right{
+    margin-top: 20px;
+}
+
+.prodemic-image{
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+
+.about-sassa-g{
+     display: flex;
+    flex-direction: column;
+     gap: 15px;
+
+    width: 100%;
+}
+
+
+.design-process-section{
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.analysis-section{
+    flex-direction: column;
+    align-items: center;
+}
+
+.whole-infor-card{
+    width: 100%;
+}
+
+.app-infor{
+    grid-template-columns: 1fr;
+}
+
+
+.user-persona-prodemic{
+    flex-direction: column;
+}
+
+.user-persona-card{
+    width: 100%;
+}
+
+.whole-section-cards{
+    grid-template-columns: 1fr;
+}
+
+.section-screens{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.ui-screens{
+    
+    width: 100%;
+    max-width: 140px;
+    margin: 0 auto;}
+
+
+
+.image-card,
+.whole-infor-card{
+    width: 100%;
+}
+
+.about-project-container3,
+.about-sassa-g,
+.design-process-section,
+.competitor-analysis-whole-section,
+.user-persona-prodemic{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.about-sassa{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.design-process-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.section-screens{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+
+.goals-card-2,
+.info-item-3{
+    width: auto;
+    min-height: 120px;
+}
+
+}
+/*============================================================================================================================================================================
+                                                                    E-COMMERCE MOBILE
+==============================================================================================================================================================================*/
+.case-hero{
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.hero-left{
+    width: 100%;
+}
+
+.prodemic-website3,
+.sassa-w3{
+    font-size: 42px;
+    width: 100%;
+    text-align: center;
+}
+
+.case-description{
+    max-width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.view-figma3{
+    margin: 20px auto;
+    display: block;
+}
+
+.hero-right2{
+   min-width: unset;
+   width: 100%;
+}
+
+.ubuntu-image3{
+    width: 100%;
+    margin: 0;
+}
+
+.mock-img2{
+    margin: 0;
+}
+
+.blob{
+    overflow: hidden;
+}
+
+.project-infor{
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+    padding: 20px;
+}
+
+.about-sassa{
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+}
+
+.about-project-container,
+.about-project-container2{
+    width: 100%;
+}
+
+
+
+.goal-card4{
+    width: auto;
+}
+
+.design-process-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+   
+}
+
+.design-line-4{
+    display: none;
+}
+
+.info-item-4{
+    width: auto;
+}
+* {
+    font-family:poppins;
+}
+
+body{
+    background-color: #F5F5F5;
+    margin:0;
+}
+
+.menu-toggle{
+    display: block !important;
+    
+   
+}
+
+ .navbar a{
+  text-decoration: none ;
+  color: black;
+   font-size: 18px;
+  
+
+ }
+
+ 
+
+ .navbar a:hover{
+   color: rgb(27, 79, 101) ; 
+ }
+
+.highlight{
+
+    font-weight: bold;
+}
+
+.intro{
+    margin-top: 80px;                                              /*INTR0 SECTION*/
+    font-size: 18px;
+    margin-bottom: -35px;
+}
+
+.ux-ui{
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: rgb(3, 3, 3);
+font-weight: bold;
+font-size: 56px;
+
+}
+
+
+.title{
+color: rgb(5, 5, 124);
+font-weight: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 48px;
+   
+}
+
+.hero-section{
+width: 70%;
+line-height: 1.2;
+text-align: center;
+margin: 0 auto;
+max-width: 1000px;
+padding-top: 100px;
+
+
+}
+.hero-description{
+margin-top: -15px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.hireme{
+    background-color:#1D4ED8;
+    color: white;
+    border-radius: 3px;
+    height: 40px;
+    width:110px ;
+    border: none;
+    font-weight: bold;
+    text-decoration: none;
+
+    }
+
+.discover {
+background-color: rgb(224, 221, 221);
+font-weight: bold;
+width:200px ;
+border: none;
+height: 40px;
+border-radius: 3px;
+text-decoration: none;
+
+
+}
+
+
+
+.hireme:hover{
+    background-color:#1E40AF;
+}
+.discover:hover{
+    background-color: white;
+    border: 1px solid #4338CA;;
+    color: #4338CA;;
+
+}
+.about-content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.about-card{
+    margin-top:60px;
+    background-color:white;
+    border: 1px ;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+     
+}
+.heading1{
+    margin-top: -20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+    line-height: 1.2;
+}
+.about-me{
+   width: 90%;  
+   line-height: 1.7; 
+   color: #26282c; 
+   margin-bottom: 50px;
+}
+.divider{
+    background-color: #D1D5DB ;
+    height: 1px;
+    width: 62%;
+    border: none;
+    margin-left: 0;
+    
+}
+.numbers{
+    color: #1E40AF;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 14px;
+
+
+}
+.skills-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 700px;
+}
+.skills-item{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color:  #6B7280;
+}
+
+.tool-container{
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+.tool-card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color:#F3F4F6;
+    padding: 10px 14px;
+     width:  170px;
+     border-radius: 12px;
+     transition: 0.3s ease;
+
+}
+.tool-card img{
+    width: 28px;
+    height: 28px;
+}
+
+.tool-info h4{
+    margin: 0;
+    font-size: 14px;
+}
+
+.tool-info p{
+    margin:0;
+    font-size: 12px;
+    color: #6B7280;
+}
+
+.profile-image{
+margin-top: -20px;
+height: 450px;
+width: 100%;
+object-fit: cover;
+border-radius: 16px;
+display: block;
+filter: grayscale(100%);
+transform: skew(5deg);
+transition: 0.4s ease;
+
+}
+
+.about-card:hover .profile-image{
+filter: grayscale(0%);
+transform: skew(0deg) scale(1.02);
+}
+.left-side{
+    width: 68%;
+    flex: 1;
+}
+
+.right-side{
+    margin-top: -2%;
+    height: auto;
+    width: 320px;
+    flex: 0.8;
+
+}
+.tool-card2{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    background-color: rgb(233, 233, 243);
+    border-radius: 20px;
+    width: fit-content;
+    height:14px;
+    Transition: 0.3s ease;
+    
+}
+    
+
+.tool-card2 img{
+    width: 18px;
+    height: 18px;}
+
+.tool-card2 p{
+    color: #1E40AF;
+    font-size: 11px;
+}
+
+/* PROJECTs */                                                                       /* PROJECTs */
+
+
+.view-all-p{
+    background-color:#1D4ED8;
+    color: white;
+    border-radius: 3px;
+    height: 40px;
+    width:200px ;
+    border: none;
+    font-weight: bold;
+}
+
+.view-all-p:hover{
+    background-color:#1E40AF;
+
+}
+
+.projects-section{
+    margin: 80px auto;
+    width: 85%;
+    max-width: 1200px;
+}
+.featured-projects{
+  margin-top: 20px;
+  font-size: 40px;
+  font-family:Georgia, 'Times New Roman', Times, serif ;  
+  margin-bottom: 20px;
+}
+
+.projects-description{
+width: 80%;
+color: #6B7280;
+line-height: 1.6;
+max-width: 620px;
+font-size: 16px;
+
+}
+
+.project-container{
+    background-color: white;
+    width: fit-content;
+    position: relative;
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow:  0 4px  12px rgb(187, 184, 184);
+    transition: 0.3s ease;
+    margin-top: -20px;  
+}
+
+.project-container:hover{
+    transform: translateY(-8px);
+}
+
+.project-title {
+    font-size:20px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;  
+    
+    
+}
+.p-description{
+font-size: 15px;
+line-height: 1.5;
+color: #4B5563;
+margin-bottom: 14px;
+margin-top: 0;
+}
+
+.project-number{
+    color: #5574c9;
+    font-size: 12px;
+    margin-top: -15px;
+    font-weight: 500;
+    
+
+}
+.view-casestudy,
+.view-casestudy2,
+.view-casestudy3
+{
+    margin-top:5px ;
+    border:none;
+    background-color:white;
+    color: #1D4ED8;
+    font-weight:bold;
+    cursor: pointer;
+    font-size: 15px;
+    
+}
+
+.view-casestudy:hover,
+.view-casestudy2:hover,
+.view-casestudy3:hover{
+    color: #779be8;
+}
+.project-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.project-info{
+    padding: 16px;
+}
+
+
+.p-type p{
+    font-size: 9px;
+    height: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #EEF2FF;
+    
+    width: fit-content;
+    text-align: center;
+    border-radius: 8px;
+    color: #56585e;
+    padding: 6px 10px;
+    margin-top: 0;
+       
+}
+.image-p{
+    height: 170px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.p-type{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    
+    
+
+}
+
+.project-tag{
+    background-color: #2563EB;
+    width: 90px;
+    height: 25px;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 11px;
+    border:1px solid white;
+    position: absolute; 
+    top: 20px;
+    left: 20px;
+    font-weight: 600;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+    box-shadow:  0 4px 12px rgba(0,0,0m 0.06);
+}
+
+.image-p{
+    width: 100%;
+    display: block;
+    border-radius: 16px 16px 0 0;
+    height: 165px;
+}
+.project-grid{
+    display: flex;
+    gap: 20px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.view-all{
+    background-color:#1D4ED8;
+    color: white;
+    border-radius: 14px;
+    height: 40px;
+    width:180px ;
+    border: none;
+    font-weight: bold;
+    padding: 16px 28px;
+    cursor: pointer;
+    
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.view-all:hover{
+ background-color:#1E40AF;
+
+}
+
+/* CONTACT SECTION*/
+
+.contact-card{
+    background-color: white;
+
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px;
+    border-radius: 28px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    position: relative;
+   
+
+}
+
+.let-us-connect{
+    color: #1D4ED8;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.get-in-touch{
+font-size: 40px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+margin-top: 12px; 
+margin-bottom: 10px;
+line-height: 1.05;
+letter-spacing: -1px;
+}
+
+.icons{
+    display: flex;
+    gap: 16px;
+    margin-top: -10px;
+    margin-left: -15px;
+}
+
+.icon{
+    font-size: 13px;
+    color: #6B7280;
+    margin-top: 10px;
+    width: 40px;
+}
+
+.icon-name{
+    color: #6B7280;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.contact-description{
+    width: 85%;
+    color: #4B5563;
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.9;
+
+}
+
+.input-field input{
+    width: 100%;
+    height: 56px;
+    border-radius: 10px;
+    border: 1px solid #D1D5DB;
+    gap: 30px;
+    padding: 0 16px;
+   
+    box-sizing: border-box;
+
+}
+
+.input-field{
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+   gap: 20px;
+  
+}
+
+.contact-left{
+    width: 35%;
+}
+
+.send-message{
+    background-color:#1D4ED8;
+    color: white;
+    border-radius: 10px;
+    height: 54px;
+    width:210px ;
+    border: none;
+    font-weight: 600;
+    padding: 16px 28px;
+    cursor: pointer;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 4px;
+    align-self: flex-end;
+    margin-top: 40px;
+   
+}
+
+.send-message:hover{
+ background-color:#1E40AF;   
+}
+
+input::placeholder,
+textarea::placeholder{
+    color: #b0b2b8;
+    font-size: 14px;
+    font-family: inherit;
+    
+  
+}
+.top-inputs{
+    display: flex;
+    gap: 20px;
+
+}
+
+.top-inputs input{
+    width: 100%;
+}
+
+.message{
+    height: 140px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #D1D5DB;
+
+    padding: 18px;
+
+    font-size: 15px;
+    font-family: inherit;
+    resize: none;
+
+    box-sizing: border-box;
+
+}
+.subject input{
+   width: 100%; 
+   height: 56px;
+}
+
+.contact-card:before{
+    content: "";
+    position: absolute;
+
+    left: 40%;
+    top: 70px;
+
+    width: 1px;
+    height: 75%;
+
+    background-color: #E5E7EB;
+}
+
+.contact-line{
+    width: 48px;
+    height: 4px;
+    background-color: #1D4ED8;
+    border-radius: 999px;
+    margin-bottom: 28px;
+}
+
+.input-field input,
+.message{
+    transition: 0.2s ease;
+}
+
+.input-field input:focus,
+.message:focus{
+    outline: none;
+    border: 1px solid #1D4ED8;
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.1);
+}
+
+.contact-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+
+    width: 90px;
+    height: 90px;
+
+    padding: 14px;
+
+    border-radius: 16px;
+
+    transition: all 0.2s ease;
+}
+
+.contact-item:hover{
+    background-color: #ebeef6;
+    transform: translateX(-3px);
+    
+}
+
+
+.dc{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 24px;
+}
+
+#contact{
+    scroll-margin-top: 110px;
+}
+
+
+.about-card,
+.contact-card{
+    width: 85%;
+    max-width: 1200px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    box-sizing: border-box;
+}
+
+/* ABOUT ME PAGE*/                                                /* ABOUT ME PAGE*/
+
+
+
+.about-me-h1{
+    margin-top: 100px;
+}
+.about-me-h1,
+.heading{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    font-size: 52px;
+    
+
+}
+
+.about-me-p{
+     display: flex;
+     justify-content: center;
+     font-size: 16px;
+     margin-top: -40px;
+
+}
+
+
+/*ABOUT ME SECTION*/
+
+.about-me-card2{
+    background-color: #eff5f7;
+    width: 75%;
+
+    display: flex;
+    align-items: center;
+    gap: 80px;
+
+    margin: 0 auto;
+    
+   
+
+
+    padding:50px;
+    border-radius: 24px;
+    box-shadow:0 4px 2px rgba(8, 8, 8, 0.06);
+    
+}
+
+/*LEFT SIDE IMAGE*/
+
+.right-side-aboutme{
+  
+     width: 62%;
+
+}
+
+/*RIGHT SIDE TEXT*/
+
+.right-side-aboutme{
+    width: 60%;
+}
+
+.my-image{
+    width: 40%;
+    flex-shrink: 0;
+}
+
+
+.my-image2{
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    height: 480px;
+
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about-me-description{
+  
+    line-height: 1.8;
+    max-width: 600px;
+    font-size: 16px;
+    color: #2b2b2b;
+}
+
+.my-story-h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-bottom: 60px;
+    margin-top: 80px;
+
+    text-align: center;
+
+}
+
+
+.year{
+    background-color: rgb(19, 59, 169);
+    color: white;
+    border-radius:20px;
+    font-weight:bold;
+    font-size:16px;
+   
+
+    padding:10px 22px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    align-self: flex-start;
+}
+
+.heading1{
+    margin-top: 2px;
+}
+
+.heading2{
+    color: #597cdb;
+    font-size: 24px;
+    margin-top: -20px;
+}
+
+.timeline-item{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.timeline-left,
+.timeline-right{
+    width: 45%;
+    flex: 1;
+   
+}
+
+
+.timeline-item{
+    width: 75%;
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+   
+
+    align-items: center;
+    padding:40px;
+
+    position: relative;
+    z-index: 2;
+    
+}
+
+.design{
+    width:100%;
+    object-fit: cover;
+    border-radius: 20px;
+    height: 300px;
+}
+.timeline-description{
+    font-size: 14px;
+    color: #4B5563;
+    line-height: 1.8;
+}
+
+.main-line{
+    position: absolute;
+    left: 50%;
+    top: 0;
+
+    width: 2px;
+    height: 75%;
+
+    background-color: #afabab;
+    transform: translateX(-50%);
+    z-index: 0;
+    margin-top: 250px;
+}
+
+.circle1{
+    width: 18px;
+    height: 18px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    border: 5px solid #1D4ED8;}
+
+.timeline-centre{
+    width:80px;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+
+    padding-top: 0;
+
+}
+
+.timeline-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+   
+}
+
+.mystoryline{
+    background-color: #314777;
+    height: 6px;
+    width: 40px;
+    border-radius: 999px;
+
+    margin: -55px auto 80px auto;
+    
+}
+
+/*PROJECTS PAGE*/
+
+.heading-projects{
+    margin-top: 130px;
+}
+
+.heading-projects  p{
+    
+    width: 800px;
+    margin: 0 auto 8px auto; 
+    max-width: 90%;
+    text-align: center;
+}
+
+.design-is-not{
+  display: flex;
+    justify-content: center;
+    width: 800px;
+    margin: 0 auto;
+    font-weight: bold;   
+    color: #1E40AF;
+
+    margin-bottom: 5px;
+}
+
+.project-grid1{
+    width: 85%;
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 40px;
+
+    margin: 0 auto;
+
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+/*PROJECT CARD*/
+.project-container1{
+    width: 82%;
+    max-width: 900px;
+
+    min-height: 230px;
+    height: auto;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 22px;
+    padding: 24px 28px;
+
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 2px 10px rgba(225, 224, 230, 0.04);   
+
+    transition: all 0.35s ease;
+}
+
+.project-container1:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(213, 215, 231, 0.12);
+    border:  1px solid #DBEAFE;
+
+}
+/*LEFT SIDE*/
+.project-information{
+    display:flex;
+    flex-direction:column;
+    gap: 1px;
+    width:48%;
+}
+
+
+/* NUMBER*/
+.project-number1{
+
+    
+    color: #1D4ED8;
+    font-weight: bold;
+
+  
+    margin-bottom: 8px;
+  
+
+}
+
+/*TITLE*/
+
+
+/*DESCRIPTION*/
+.project-description{
+    font-size:13px;
+    line-height: 1.5;
+    color: #555;
+    max-width: 420px;
+    margin-top: 10px;
+
+}
+
+/*SKILLS*/
+
+.image-project{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.project-no{
+    border: #26282c;
+    border-radius:10px ;
+}
+.project-information button{
+
+    padding: 10px 18px;
+    border:none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
+
+.button{
+    cursor: pointer;
+}
+
+.project-buttons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 30px;
+
+  
+}
+
+.view-casestudy-sassa,
+.view-casestudy-e-commerce,
+.view-casestudy-prodemic{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+   
+
+}
+
+.person-goals,
+.person-fustrations{
+    width: 100%;
+}
+
+.view-casestudy-sassa:hover,
+.view-casestudy-e-commerce:hover,
+.view-casestudy-prodemic:hover{
+    color: #5574c9;
+}
+
+.view-p{
+    background-color: #1D4ED8;
+    color: white;
+    width: 200px;
+}
+
+.view-p:hover{
+    background-color: #1E40AF;
+}
+
+
+.project-no{
+    width: 1px;
+    height: 10px;
+    padding: 10px 16px;
+    color: #1D4ED8;
+    border-radius: 10px;
+    border: 1px solid blue;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: -10px;
+
+    display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.project-title1{
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height:1.1;
+    margin:0;
+   
+    width: 240px;
+      
+}
+
+.title-row{
+   display: flex; 
+  align-items: center;
+   gap: 16px;
+    
+}
+
+.arrow{
+    margin-left: 20px;
+   
+}
+
+
+/* PROJECT CTA*/
+
+.projects-cta{
+    width: 72%;
+    max-width: 900px;
+
+    margin: 60px auto 100px auto;
+
+    background-color: #e9edf1;
+
+    border-radius: 20px;
+
+    padding: 24px 26px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 30px 40px 120px rgba(20, 32, 48, 0.04);
+
+    transition:0.3s ease;
+}
+
+.projects-cta:hover{
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.10);
+
+}
+
+.cta-content{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+.rocket{
+    width: 60px;
+    height: 60px;
+
+}
+.cta-icon{
+
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+
+    background-color: #EEF2FF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+
+    flex-shrink: 0;
+}
+
+.cta-text h3{
+    margin-top: 4px;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cta-text p{
+    margin-top: 6px;
+    color: #6B7280;
+    font-size: 14px;
+    line-height: 1.6;
+
+}
+
+.lets-work{
+    background-color: #1D4ED8;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+
+    border-radius: 12px;
+    font-weight: bold;
+
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+
+    transition: 0.3s ease;
+
+}
+
+.lets-work:hover{
+    background-color: #1E40AF;
+}
+
+cta-button:hover{
+    background-color: #1E40AF;
+}
+
+.left-cta{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.cta-paragraph{
+    margin-top: -10px;
+}
+
+
+/* SASSA PROJECT PAGE*/ 
+
+.intro-section{
+    max-width: 1400px;
+    margin:0 auto;
+    padding: 60px 40px;
+  
+  
+}
+
+.sassa-website,
+.sassa-w{
+font-size: 100px;
+font-weight: 800;
+line-height: 1.1;
+font-family:'Anton', sans-serif;
+text-align: left;margin: 20px 0;
+margin-top: 40px;
+
+}
+
+.ui-case-study{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(212, 158, 8);
+    height: 32px;
+    width: 120px;
+    border-radius: 5px;
+    border: 2px solid rgb(212, 158, 8);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px;
+
+
+}
+
+
+
+.case-hero{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    background: white;
+    box-shadow: 12px 10px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    text-align: center;
+    overflow: hidden;
+    padding: 60px 60px 20px 60px;
+}
+
+
+.laptop-image{
+   
+     display: block;
+     width: 140%;
+     max-width: none;
+
+     position: relative;
+     z-index: 1;
+
+     margin-left: -100px;
+
+     top: 0;
+     margin-top:100px;
+     margin-bottom: -100px;
+
+   
+   
+}
+
+.case-description{
+    text-align: left;
+    font-size: 20px;
+    color: #666;
+
+    max-width: 400px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.hero-left{
+  
+    position: relative;
+    margin-left: -5px;
+   
+}
+
+.hero-right{
+    flex: 1.6;
+    position: relative;
+    transform: none;
+  
+  
+}
+
+.blob{
+    position: absolute;
+    top: -30px;
+    right: -40px;
+    z-index:0;
+   
+   
+    
+    transform: rotate(-50deg);
+ 
+}
+
+.blob img{
+
+  width: 500px;
+  height: 500px;
+  display: block;
+ 
+}
+
+.view-figma{
+    height: 40px;
+    width: 180px;
+    background-color: rgb(223, 166, 12);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-left: -380px;
+    margin-top: 50px;
+    
+   
+
+}
+
+.view-figma:hover{
+    background-color: rgba(196, 145, 8);
+    transform: translateY(-2px);
+}
+
+.back-to-projects{
+     margin-left: 60px;
+     text-decoration: none;
+     color: black;
+     font-weight: bold;
+
+     display: inline-block;
+     margin-top: 30px;
+     margin-left: 50px;
+    
+   
+
+}
+
+.back-to-projects:hover{
+    color: #5574c9;
+}
+
+.sassa-w{
+    color:rgba(196, 145, 8);
+   
+
+}
+
+/*ROLE CARD*/
+.role1{
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0;
+    margin-bottom: 8px;
+  
+}
+
+.role-p1{
+    font-weight: bold;
+    color: rgba(196, 145, 8);
+    margin: 0;
+   
+}
+
+.role{
+    display: inline;
+    justify-content: center;
+
+}
+
+.project1-infor{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: -50px;
+
+    border-top: 1px solid rgb(194, 194, 194);
+    border-bottom: 1px solid rgb(194, 194, 194);
+    width: fit-content;
+    height: 80px;
+    align-items: center;
+   
+
+/*ABOUT SASSA PROJECT*/
+.h2-about{
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+   
+}
+
+
+.number-1{
+    color: rgb(194, 120, 10);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.about-sassa{
+    display: flex;
+    gap: 80px;
+    max-width: 1100px;
+    margin: 100px auto;
+    align-items: flex-start;
+}
+
+.about-project-container,
+.about-project-container2{
+    flex: 1;
+}
+
+.goals{
+    display: flex;
+    gap: 80px;
+    max-width: 1100px;
+    margin: 100px auto;
+    align-items: flex-start;
+    margin-top: -80px;
+    margin-bottom: 30px;
+}
+
+.goal-card{
+   
+    width: 220px;
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #cccaca;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border-left: 3px solid rgb(209, 163, 10);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+   
+}
+
+
+
+
+.design-description{
+    margin-top: -20px;
+}
+
+.process-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.process-card{
+    position: relative;
+    min-height: 70px;
+    padding: 32px;
+
+    background: #fff;
+
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+    box-shadow: 40px 4px 20px rgba(214, 164, 1, 0.04);
+}
+
+.process-card:hover{
+    transform: translateY(-6px);
+    border-color: #d8b61d;
+
+    box-shadow:  0 12px 30px rgba(0, 0, 0, 0.04);
+}
+
+.card-number1{
+   
+    top: 25px;
+    right: 25px;
+
+    color: rgba(194, 120,10);
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+
+
+.process-card h3{
+    font-size: 24px;
+    margin-bottom: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.process-card p{
+    color: #666;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+
+/*RESEARCH METHODS*/
+
+.research-heading{
+    display: flex;
+    padding-top: 30px;
+   
+    justify-content: flex-start;
+    
+}
+
+.research-section{
+    margin-top: 20px;
+}
+
+.research-emoji{
+    width: 25px;
+    height: 25px;
+}
+
+.methods-used{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 2px;
+    margin-left: 10px;
+ 
+}
+
+.research-cards{
+    background-color: #FCFAF7;
+    box-shadow:  30px 12px 30px rgba(0, 0, 0, 0.04);
+    height: 220px;
+    width: 240px;
+    border-radius: 10px;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 20px;
+    text-align: left;
+    
+
+
+}
+
+.research-cards:hover{
+    transform: translateY(-6px);
+    border-color: #d8b61d;
+
+    box-shadow:  0 12px 30px rgba(0, 0, 0, 0.04);
+}
+
+.research-list{
+    line-height: 2;
+}
+
+.Research-information-section{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+   
+}
+
+.about-sassa-g{
+    margin: 0 auto 40px auto;
+    max-width: 1100px;
+}
+
+
+/*USER PERSONA SECTION*/
+
+.what{
+    font-weight: bold;
+    color: black;
+}
+
+.persona-name{
+  font-family: Georgia, 'Times New Roman', Times, serif;  
+}
+
+.persona-info{
+    color: grey;
+    width: 300px;
+}
+
+.Persona-cards{
+    
+    background-color: #e6e5e5;
+    box-shadow:  30px 12px 30px rgba(0, 0, 0, 0.04);
+    height: 590px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 20px;
+}
+
+.Persona-cards:hover{
+    transform: translateY(-6px);
+    border-color: #d8b61d;
+
+    box-shadow:  0 12px 30px rgba(0, 0, 0, 0.04);
+}
+
+
+.user-persona1{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    width: 150px;
+    margin-top: -50px;
+    border: 1px solid #e4e5e6;
+    border-radius: 100px;
+
+}
+
+.all-cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+   
+
+}
+
+/*USER REVIEWS*/
+
+.user-reviews-section{
+    margin-top: 120px;
+}
+
+.reviews-container{
+    position: relative;
+    width: 1000px;
+    height: 700px;
+    margin: 0  auto;
+}
+
+.phone-review{
+    width: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+/*CIRCLES*/
+
+.circle-1,
+.circle-2, 
+.circle-3{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    border: 2px  dashed  rgba(194, 120, 10, 0.2);
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 1;
+}
+
+
+
+.circle-1{
+    width: 250px;
+    height: 250px;
+}
+
+.circle-2{
+    width: 400px;
+    height: 400px;
+}
+
+.circle-3{
+    width: 550px;
+    height: 550px;
+}
+
+
+/* REVIEW CARDS*/
+
+.review-1,
+.review-2,
+.review-3,
+.review-4{
+    position:absolute;
+    width: 300px;
+    height: 140px;
+    padding:20px;
+    border: 1px solid rgb(219, 216, 216);
+  
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+
+    z-index: 5;
+    background-color: #FCFAF7;
+
+    padding:24px;
+}
+
+.review-1:hover,
+.review-2:hover,
+.review-3:hover,
+.review-4:hover{
+    transform: translateY(-6px);
+
+
+    box-shadow:  0 12px 30px rgb(190, 171, 134);
+
+}
+
+/*REVIEW IMAGES*/
+
+.review-1 img,
+.review-2 img,
+.review-3 img,
+.review-4 img,
+.review-5 img{
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    margin-top: -200px;
+    margin-left: 280px;
+
+
+}
+
+.review-1 p,
+.review-2 p,
+.review-3 p,
+.review-4 p{
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* POSITIONS*/
+
+.review-1{
+    top:100px;
+    left:-50px;
+}
+
+.review-2{
+    top:100px;
+    right:-50px;
+}
+
+.review-3{
+    bottom:100px;
+    left:-50px;
+}
+
+.review-4{
+    bottom:100px;
+    right:-50px;
+}
+
+
+
+.review-avatar{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: block;
+
+    top: -30px;
+    left: 20px;
+
+    border-radius: 50%;
+    object-fit: cover;
+  
+}
+
+.phone-avatar{
+    width: 10px;
+    height: 10px;
+}
+
+/*wireframes*/
+
+.wireframes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.wireframes-img{
+    width: 250px;
+}
+
+
+.screens-card{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.screens-card img{
+    width: 500px;
+}
+
+
+/*SPACING*/
+
+.final-ui-section,
+.reflection-section,
+.user-Personas-section,
+.research-section,
+.design-process,
+.about-sassa,
+.intro-section,
+.design-process-section{
+    margin-top: 80px;
+}
+
+
+.reflection-section P{
+  
+    line-height: 1.8;
+}
+
+
+
+
+
+/*PRODEMIC*/
+
+
+
+
+.ui-case-study2{
+
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(19, 88, 145);
+    height: 32px;
+    width: 120px;
+    border-radius: 5px;
+    border: 2px solid rgb(9, 84, 146);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px;
+
+
+}
+
+.view-figma2{
+    height: 40px;
+    width: 180px;
+    background-color: #2155ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-left: -380px;
+    margin-top: 50px;
+    
+}
+
+.view-figma2:hover{
+    background-color: #1D4ED8;
+}
+
+.role-p2{
+    font-weight: bold;
+    color: rgb(8, 58, 196);
+    margin: 0;}
+
+.prodemic-website2,
+.sassa-w2{
+font-size: 100px;
+font-weight: 800;
+line-height: 1.1;
+font-family:'Anton', sans-serif;
+text-align: left;margin: 20px 0;
+margin-top: 40px;
+
+}
+
+.sassa-w2{
+    color: #054672;
+
+}
+
+.prodemic-website2{
+    color: #0a1f57;
+}
+
+
+.view-figma2{
+    height: 40px;
+    width: 180px;
+    background-color: rgb(11, 66, 167);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+   
+    margin-top: 50px;
+    
+   
+
+}
+
+
+.view-figma:hover{
+    background-color: rgb(29, 156, 206);
+    transform: translateY(-2px);
+}
+
+.prodemic-image{
+     display: block;
+     width: 100%;
+     max-width: none;
+
+     position: relative;
+     z-index: 1;
+
+     width: 700px;
+     max-width: none;
+     top: 0;
+   
+}
+
+.hero-right3{
+    position: relative;
+    flex: 1;
+    min-width: 700px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.circle{
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+    background: #88b4d1;
+    border-radius: 50% ;
+    border: none;
+  
+
+    z-index: 0;
+    top: 90%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+
+.mock-img2{
+    position: relative;
+    margin: 0;
+    
+
+}
+
+.project3-infor{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: -50px;
+
+    border-top: 1px solid rgb(194, 194, 194);
+    border-bottom: 1px solid rgb(194, 194, 194);
+    width: fit-content;
+    height: 80px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.number-2{
+    color: rgb(20, 20, 145);
+    font-weight: bold;
+}
+
+.goal-card-2{
+    width: 220px;
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #cccaca;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border-left: 3px solid rgb(10, 56, 209);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.goal-card-2:hover{
+    transform: translateY(-6px);
+    border-color: #3a80e9;
+
+    box-shadow:  0 12px 30px rgba(22, 167, 211, 0.04);
+}
+
+.design-process-section{
+    display: flex;
+    gap: 80px;
+    max-width: 1100px;
+    margin: 100px auto;
+    align-items: flex-start;
+    margin-top: 0;}
+
+.design-process-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1100px;
+    width: 100%;
+    height: 120px;
+    position: relative;
+
+}
+
+
+.about-project-container3{
+     margin-left: 80px;
+  
+}
+
+
+.design-line{
+    position: absolute;
+   
+    width: 80%;
+    height: 2px ;
+    border-top: 2px dashed rgb(154, 172, 223);
+    z-index: 0;
+    top:50%;
+    left: 10%;
+}
+
+.describe-3{
+    font-size: 20px;
+    color: #0a1f57;
+    transform: translateY(-6px);
+  
+}
+
+.titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-right: -60px;
+   
+  
+  
+  
+}
+
+.title-name{
+    background-color:white;
+    border-radius: 10px;
+    border: 2px solid rgb(189, 205, 240);
+    font-size: 18px;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.list-name{
+   background-color:white;
+    border-radius: 10px;
+    border: 2px solid rgb(189, 205, 240);
+    width: 160px;
+    height: 90px;
+    font-size: 12px;
+    padding-top: 30px;
+
+
+}
+   
+.analysis-card{
+    display:block;
+   margin-left: 60px;
+   margin: 0;
+
+}
+
+.app-infor{
+    display: flex;
+    gap:30px;
+    margin-left: 80px;
+  
+}
+
+
+.app-logo-div{
+  
+    font-size: 18px;
+    width: 200px;
+    height: 122px;
+    font-size: 12px;
+
+    display: flex;
+    flex-direction: column; /*vertical direction for the app name*/
+    justify-content: center;
+    align-items: center;
+  
+
+}
+
+.app-logo{
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+  
+}
+
+.analysis-section{
+ 
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 1px;
+      align-items: flex-start;
+   
+}
+
+.key-container{
+    margin-top: 60px;
+
+}
+.key-takeaways{
+   background-color:white;
+    border-radius: 10px;
+    border: 2px solid rgb(189, 205, 240);
+    font-size: 12px; 
+    width: 310px;
+    
+}
+
+.describe{
+ font-size: 16px;
+color: #1E40AF;
+}
+
+.image-card{
+    width: 320px;
+    flex-shrink: 0;
+}
+
+.whole-infor-card{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.info-item-3{
+    border-top: 4px solid #314777;
+    border-left: 4px solid #314777;
+    border-radius: 30px;
+    width: 200px;
+    padding-left: 30px;
+    position: relative;
+    background: white;
+    z-index: 1;
+}
+
+.info-item-3:hover{
+    transform: translateY(-6px);
+    border-color: #699be6;
+
+    box-shadow:  0 12px 30px rgba(22, 167, 211, 0.04);
+}
+.analysis-image{
+    width: 300px;
+    display: block;
+    align-items: center;
+}
+
+.competitor-analysis-whole-section{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.says{
+    width: 300px;
+}
+
+.user-persona-prodemic{
+    max-width: 1400px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.user-persona-card:hover{
+    transform: translateY(-6px);
+   
+
+    box-shadow:  0 12px 30px rgb(202, 201, 201);
+
+}
+.user-persona-card{
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 500px;
+}
+
+.header-info{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    background-color: #f5f6f8;
+}
+
+.persona1 img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.persona-details{
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+    
+}
+
+.persona-goals-card,
+.persona-goals-card3,
+.persona-goals-card2,
+.persona-goals-card1{
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border: 15px;
+    padding: 20px;
+    width: 300px;
+}
+
+.tag{
+    color-scheme: #0a1f57;
+    margin-bottom: 15px;
+}
+
+.persona-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 25px;
+   
+    padding: 20px 30px;
+}
+
+.persona-box{
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+}
+
+.persona h3{
+    margin-bottom: 15px;
+    color: #0A1F57;
+}
+
+
+.persona-goals-card,
+.persona-goals-card3,
+.persona-goals-card2,
+.persona-goals-card1{
+    border: 1px solid rgb(236, 234, 234);
+    border-radius: 20px;
+    width: 180px;
+
+}
+
+.persona-goals-card{
+      border-left: 4px solid rgb(121, 142, 240);
+
+}
+
+.persona-goals-card2{
+      border-left: 4px solid rgb(168, 7, 7);
+
+}
+  
+
+.persona-goals-card3{
+      border-left: 4px solid rgb(31, 110, 255);
+
+}
+
+
+.persona-goals-card1{
+      border-left: 4px solid rgb(15, 169, 207);
+
+}
+  
+  
+
+.goals-list-p{
+    font-size: 12px;
+}
+
+.whole-section-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*UI SCREENS*/
+
+.section-screens{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ui-screens{
+    width: 200px;
+}
+
+.intro-to-app{
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.h2-screens{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 80px;
+
+}
+
+.screen-description{
+   
+    margin-left: 80px;
+}
+
+
+
+.h2-screens{
+    margin-top: 80px;
+   
+}
+
+
+
+
+
+
+
+
+
+/*UBUNTU LIVING CASE STUDY*/
+
+.ui-case-study3{
+
+    font-size: 12px;
+    font-weight: bold;
+    color: #7B3F00;
+    height: 32px;
+    width: 120px;
+    border-radius: 5px;
+    border: 2px solid #7B3F00;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px;
+
+
+}
+
+.view-figma3{
+    height: 40px;
+    width: 180px;
+    background-color: #5e3c10;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-left: -430px;
+    margin-top: -800px;
+    
+}
+
+.view-figma3:hover{
+    background-color:rgb(145, 68, 5);
+   
+   
+}
+
+.role-p3{
+    font-weight: bold;
+    color: #311e06;
+    margin: 0;}
+
+.prodemic-website3,
+.sassa-w3{
+font-size: 80px;
+font-weight: 800;
+line-height: 1.1;
+font-family:'Anton', sans-serif;
+text-align: left;margin: 20px 0;
+margin-top: 40px;
+width: 600px;
+
+}
+
+.sassa-w3{
+    color: rgb(82, 45, 3);
+
+}
+
+
+
+.ubuntu-image3{
+     display: block;
+     width: 100%;
+     max-width: none;
+
+     position: relative;
+     z-index: 1;
+
+     width: 900px;
+     max-width: none;
+     top: 0;  
+     margin-left: -300px;
+     margin-top: -30px;
+}
+
+.hero-right2{
+    position: relative;
+    flex: 1;
+    min-width: 700px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.circle4{
+    position: absolute;
+
+    width: 650px;
+    height: 650px;
+    background: #88b4d1;
+    border-radius: 50% ;
+    border: none;
+    margin-top: 500px;
+
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    
+
+}
+
+.mock-img2{
+    position: relative;
+    margin-left: -700px;
+    margin-bottom: -300px;
+    
+
+}
+
+.number-4{
+    color: #643b09; 
+}
+
+.goal-card4{
+    width: 220px;
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #cccaca;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border-left: 3px solid rgb(153, 88, 28);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.goal-card4:hover{
+    transform: translateY(-6px);
+    border-color: #683505;
+
+    box-shadow:  0 12px 30px rgba(22, 167, 211, 0.04);
+}
+
+.design-process-section-3{
+    display: flex;
+    gap: 80px;
+    max-width: 1100px;
+    margin: 100px auto;
+    align-items: flex-start;
+    margin-top: 0;}
+
+
+
+.design-line-4{
+    position: absolute;
+   
+    width: 80%;
+    height: 2px ;
+    border-top: 2px dashed rgb(175, 86, 26);
+    z-index: 0;
+    top:50%;
+    left: 10%;
+}
+
+.describe-4{
+    font-size: 20px;
+    color: #6b3408;
+    transform: translateY(-6px);
+
+}
+
+.bio{
+    width: 250px;
+   
+  
+}
+
+.persona4{
+    width: 150px;
+}
+
+
+
+.titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-right: -60px;
+   
+  
+  
+  
+}
+
+.describe2{
+    background-color:white;
+    border-radius: 10px;
+   
+    font-size: 18px;
+    width: 180px;
+    height: 40px;
+    padding-bottom: 30px;
+    
+}
+
+.info-item-4{
+    border-top: 4px solid #974f0c;
+    border-left: 4px solid #974f0c;
+    border-radius: 30px;
+    width: 200px;
+    padding-left: 30px;
+    position: relative;
+    background: white;
+    z-index: 1;
+    height: 180px;
+}
+
+.about-e-commerce-p{
+    display: flex;
+    max-width: 1100px;
+    margin: 100px auto;
+    align-items: flex-start;
+    margin-bottom:20px;
+}
+
+.h2-about3{
+    margin-top: -60px;
+}
+
+
+.what-3{
+    font-size: 14px;
+}
+
+.h2-about3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+
+}
+
+.user-persona-ecommerce{
+    margin-top: 180px;
+}
+
+.back-to-project{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+
+}
+
+.back-to-project:hover{
+    color: #1446eb;
+}
+
+.footer-1{
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    margin: 30px 0;
+    margin-top: 100px;
+}
+
+
+
+/*=============================================================================================================================================================================
+                                                                                 RESPONSIVE DESIGN 
+================================================================================================================================================================================*/
+
+/*=========================
+TABLET
+===========================*/
+
+
+/*============================================================================================================================================================================
+                                                                     INDEX.HTML
+==============================================================================================================================================================================*/
+
+
+
+@media screen and ( min-width:769px) and (max-width:1024px){
+
+
+    body{
+        font-size: 14px;
+    }
+
+    
+    .hero-section{
+        width: 90%;
+        padding-top: 120px;
+    }
+
+   
+    .about-content{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    
+    .right-side{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex: 0.8;
+    }
+
+    .left-side{
+        flex: 1.4;
+    }
+
+    .about-me{
+        width: 100%;
+    }
+
+    .divider{
+        width: 80%;
+        margin: 25px auto;
+    }
+
+  
+
+    .tool-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .tool-card{
+        width: auto;
+        min-width: 140px;
+       
+    }
+
+    .heading1{
+        font-size: 24px;
+    }
+
+    .about-me{
+        width: 280px;
+    }
+
+    .profile-image{
+        max-width: 100%;
+        width: 260px;
+        height: auto;
+       
+    }
+
+    .skills-item,
+    .numbers{
+        font-size: 12px;
+
+    }
+
+    .skills-section{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        width: 100%;
+
+    }
+
+    .skills-item{
+        text-align: center;
+    }
+    .project-top{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .projects-description{
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .hero-description{
+        font-size: 14px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-card{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact-card:before{
+        display: none;
+    }
+
+    .contact-left,
+    .input-field{
+        width: 100%;
+    }
+
+    .profile-image{
+    filter: grayscale(0%);
+  
+}
+
+.projects-section{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.p-description{
+    font-size: 12px;
+    line-height: 1.4;
+}
+.project-title{
+    font-size: 18px;
+}
+
+.p-type p{
+    font-size: 8px;
+    padding: 4px 8px;
+}
+
+.intro{
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+
+}
+
+.featured-projects{
+    font-size: 32px;
+}
+
+.projects-description{
+    font-size: 14px;
+}
+
+.view-casestudy,
+.View-casestudy2,
+.view-casestudy3{
+    font-size: 14px;
+}
+
+.ux-ui{
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    line-height: 1.35;
+    margin-bottom: 10px;
+   
+}
+
+.title{
+    font-size: 34px;
+    display: inline;
+}
+
+.project-container{
+    width: 230px;
+  
+  
+
+}
+
+/*============================================================================================================================================================================
+                                                                     ABOUT ME PAGE  TABLET
+==============================================================================================================================================================================*/
+
+.about-me-h1{
+  font-size: 42px;  
+  text-align: center;
+  width: 100%;
+}
+
+
+.about-me-p{
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-me{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.about-me-card2{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.my-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+
+}
+
+.my-image2{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.right-side-aboutme{
+    width: 100%;
+    flex: 1;
+}
+
+
+.about-me-description{
+    font-size: 14px;
+    line-height: 1.8;
+    width: 90%;
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*My story timeline*/
+
+.timeline-item{
+    width: 90%;
+    gap: 20px;
+    padding: 20px;
+}
+
+.timeline-left, 
+.timeline-right{
+    width: 45%;
+}
+
+.timeline-centre{
+    width: 50px;
+}
+
+.design{
+    height: 220px;
+}
+
+.heading2{
+    font-size: 18px;
+}
+
+.timeline-description{
+    font-size: 13px;
+}
+
+.main-line{
+    height: 78%;
+}
+
+/*============================================================================================================================================================================
+                                                                     TABLET PROJECTS PAGE
+==============================================================================================================================================================================*/
+.heading-projects{
+    width: 90%;
+    margin: 120px auto 60px;
+}
+
+.heading{
+    font-size: 42px;
+}
+
+.design-is-not{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.heading-projects p{
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.project-grid1{
+    width: 95%;
+    max-width: 850px;
+
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-information{
+    width: 50%;
+}
+
+.project-title1{
+    font-size: 20px;
+}
+
+.image-project{
+    width: 45%;
+}
+
+.project-description{
+    font-size: 13px;
+}
+
+.project-buttons{
+    flex-wrap: wrap;
+}
+
+.projects-cta{
+    width: 90%;
+    padding: 25px;
+}
+
+.cta-paragraph{
+    font-size: 14px;
+}
+
+
+/*============================================================================================================================================================================
+                                                                     TABLET SASSA CASESTUDY
+==============================================================================================================================================================================*/
+
+
+.intro-section{
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+   
+}
+
+.case-hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 40px;
+
+    text-align: left;
+}
+
+.hero-left{
+    flex: 1;
+}
+
+.hero-right{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.laptop-image{
+    width: 100%;
+    max-width: 450px;
+
+    margin: 0  !important;
+    top: auto;
+}
+
+.view-figma{
+    margin-left: 0 !important;
+}
+
+.project1-infor{
+   
+    max-width: 900px;
+
+    margin: 20px auto;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 60px;
+}
+
+.about-sassa{
+   
+    max-width: 900px;
+
+    margin: 80px auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 40px;
+}
+
+
+.goals{
+    
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+
+.design-process{
+    
+    max-width: 1100px;
+    margin: 80px auto;
+}
+
+.process-grid{
+    
+    width: 100%;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.process-card{
+    min-height: auto;
+}
+
+.Research-information-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+}
+
+.research-cards{
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+}
+
+.all-cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+}
+
+
+
+.Persona-cards{
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+   
+}
+
+.persona-info{
+    width: 100%;
+}
+
+.reviews-container{
+   
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: auto;
+}
+
+.wireframes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.wireframes-img{
+    width: 100%;
+}
+
+.screens-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.screens-card img{
+    width: 100%;
+    height: auto;
+}
+
+.phone-review, 
+.circle-1, 
+.circle-2,
+.circle-3{
+    display: none;
+}
+
+.review-1, 
+.review-2, 
+.review-3, 
+.review-4{
+
+   position: static;
+   width:100%;
+   max-width: none;
+   min-height: 180px;
+
+   padding: 20px;
+   box-sizing: border-box;
+   
+}
+
+.phone-avatar{
+    width: 50px;
+    height: 50px;
+}
+
+.project1-infor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.user-persona1{
+    width: 40%;
+}
+
+.Persona-cards{
+ width: 100%;
+ max-width: 250px;
+
+}
+
+
+
+
+.sassa-page{
+    width: 100%;
+    max-width: 1000px;
+
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+
+
+.review-1,
+.review-2,
+.review-3,
+.review-4{
+    position: static;
+}
+
+.review-1 img,
+.review-2 img,
+.review-3 img, 
+.review-4 img{
+
+    position: static;
+    width: 60px;
+    height: 60px;
+
+    margin-bottom: 10px;
+
+}
+
+/*============================================================================================================================================================================
+                                                                   PRODEMIC TABLET
+==============================================================================================================================================================================*/
+.intro-section{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.case-hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+    padding: 40px;
+}
+
+.hero-left,
+.hero-right3{
+    flex: 1;
+    min-width: 0;
+}
+
+.prodemic-website2,
+.sassa-w2{
+    font-size: 70px;
+    line-height: 0.95;
+    margin: 0;
+}
+
+.hero-right3{
+
+    min-width: 0;
+    width: 100%;
+}
+
+.case-description{
+    font-size: 15px;
+    max-width: 300px;
+}
+
+.view-figma2{
+    margin: 25px 0 0 0;
+}
+
+.prodemic-image{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    
+}
+
+.circle{
+    width: 350px;
+    height: 350px;
+
+    top: 65%;
+}
+
+.design-line{
+    display: none;
+}
+
+.project3-infor{
+    width: 95%;
+    margin: 30px auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.about-sassa{
+    width: 95%;
+    margin: 80px auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+
+
+
+.analysis-section{
+    width: 95%;
+    margin: 0 auto;
+    
+    
+}
+
+
+.image-card{
+    margin: auto;
+}
+
+.whole-infor-card{
+    width: 100%;
+}
+
+.user-persona-prodemic{
+    width: 95%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.user-persona-card{
+    width: 100%;
+    height: auto;
+}
+
+.persona-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.section-screens{
+    width: 95%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.ui-screens{
+    width: 100%;
+    height: auto;
+}
+
+.screen-description{
+    width: 95%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+.info-item-3{
+    width: auto;
+    min-height: 120px;
+    padding: 20px;
+}
+
+.analysis-image{
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+
+.app-infor{
+    display: grid;
+    grid-template-columns:100px 180px 180px;
+    gap: 40px;
+    align-items: center;
+}
+
+.app-logo-div{
+    text-align: center;
+    
+}
+
+.list-name{
+    min-height: 90px;
+   
+}
+.prodemic-page{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*============================================================================================================================================================================
+                                                                    E-COMMERCE TABLET
+==============================================================================================================================================================================*/
+.case-hero{
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero-left{
+    width: 100%;
+}
+
+.hero-right2{
+    min-width: auto;
+    width: 100%;
+}
+.prodemic-website3,
+.sassa-w3{
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+}
+
+.case-description{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.view-figma3{
+    margin: 30px auto;
+    display: block;
+}
+
+.ubuntu-image3{
+    width: 100%;
+    max-width: 700px;
+    margin: 0;
+}
+
+.mock-img2{
+    margin: 0;
+}
+
+.project1-infor{
+    gap: 60px;
+    height: auto;
+    padding: 20px;
+}
+
+.about-sassa{
+    width: 90%;
+    gap: 40px;
+}
+
+
+
+.goal-card4{
+   width: auto;
+}
+
+.design-process-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: auto;
+}
+
+.design-line-4{
+    display: none;
+}
+
+.info-item-4{
+    width: auto;
+}
+
+.user-persona-prodemic{
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-persona-card{
+    width: 90%;
+}
+
+.persona-content{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.screens-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.screens-card img{
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+}
+
+.about-e-commerce-p,
+.about-project-container3{
+    margin-left: 0;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+}
+
+
+/*=========================
+MOBILE
+===========================*/
+
+/*============================================================================================================================================================================
+                                                                     MOBILE INDEX.HTML
+==============================================================================================================================================================================*/
+
+
+
+@media screen  and (max-width:768px){
+
+body{
+    overflow-x: hidden;
+
+}
+
+.hero-section{
+    margin-bottom: 200px;
+}
+
+}
+
+.navbar a{
+    font-size: 14px;
+    color: white;
+
+}
+
+.navbar a.active{
+    background: white;
+    color: #0f4fa8;
+    padding: 12px 16px;
+    border-radius: 10px;
+
+    display: block;
+    width: 200px;
+    text-decoration: none;
+
+}
+
+
+.hero-section{
+    width: 95%;
+    margin-bottom: 50px;
+    padding-top: 80px;
+  
+  
+}
+
+.intro{
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+
+}
+
+.ux-ui{
+    font-size: 22px;
+    line-height: 1.35;
+    margin-bottom: 10px;
+}
+
+.title{
+    font-size: 22px;
+    display: inline;
+}
+
+.hero-description{
+    font-size: 12px;
+    line-height: 1.6;
+    width: 95%;
+    margin: auto;
+}
+
+
+.buttons{
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.hireme,
+.discover{
+    width: 100%;
+    max-width: 280px;
+}
+
+.about-card{
+    width: 95%;
+    padding: 20px;
+}
+
+.about-content{
+    flex-direction: column;
+}
+
+.heading1{
+    font-size: 28px;
+    text-align: center;
+}
+
+.about-me{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.divider{
+    width: 100%;
+}
+
+.skills-section{
+    justify-content: center;
+    gap: 12px;
+}
+
+.skills-item{
+    font-size: 12px;
+}
+
+.tool-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.tool-card{
+    display: flex;
+    align-items: center;
+   
+    gap: 12px;
+    width: 100%;
+    max-width: 320px;
+   
+}
+
+.tool-info{
+    text-align: left;
+}
+
+.right-side{
+    width: 100%;
+}
+
+.profile-image{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto 0;
+}
+
+.projects-section{
+    width: 95%;
+}
+
+.featured-projects{
+    font-size: 30px;
+}
+
+.project-description{
+    width: 100%;
+}
+
+.project-grid{
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 80px;
+
+}
+
+.project-container{
+    width: 100%;
+    max-width: 360px;
+}
+
+.image-p{
+    height: auto;
+}
+
+.view-all-p{
+    width: 100%;
+    max-width: 260px;
+}
+
+.contact-card{
+    width: 95%;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px auto;
+}
+
+
+.contact-card:before{
+    display: none;
+
+}
+
+.contact-left,
+.input-field{
+    width: 100%;
+}
+
+.get-in-touch{
+    font-size: 30px;
+}
+
+.contact-description{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.dc{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.icons{
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  
+}
+
+.contact-left{
+    margin-bottom: 0 !important;
+  
+}
+
+.input-field{
+    margin-top: 0 !important;
+   
+}
+.top-inputs{
+    flex-direction: column;
+    gap: 15px;
+}
+
+.send-message{
+    width: 100%;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.footer-1{
+    text-align: center;
+    padding: 20px;
+}
+
+
+.input-field input::placeholder,
+.message::placeholder{
+    font-size: 12px;
+
+}
+
+
+
+.menu-toggle{
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2000;
+
+    background: #F5F5F5;
+    width: 50px;
+    height: 50px;
+    color: black;
+
+    border: 2px;
+    border-radius: 10px;
+    font-size: 28px;
+    cursor: pointer;
+
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: -300px;  /*hiddden off screen*/
+
+    width: 220px;
+    height: 100vh;
+
+    background: #054672;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding-top: 100px;
+    padding-left: 30px;
+    gap: 30px;
+
+    transition: 0.3s ease;
+
+    z-index: 1001;   
+}
+
+.navbar.show{
+    left: 0;
+}
+
+
+.navbar a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+.heading1{
+    font-size: 22px;
+}
+
+.about-me{
+    font-size: 12px;
+}
+
+.p-description{
+    font-size: 12px;
+}
+
+.View-casestudy2{
+    font-size: 9px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+    flex-wrap: nowrap;
+    margin-top: 0 !important;
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+
+}
+
+.contact-item{
+    width: 50px;
+    text-align: center;
+}
+
+.icon-name{
+    font-size: 12px;
+}
+
+.input{
+    height: 45px;
+} 
+.profile-image{
+    filter: grayscale(0%);
+}
+
+.footer-1{
+    margin-top: 10px;
+}
+
+/*============================================================================================================================================================================
+                                                                     ABOUT ME PAGE
+==============================================================================================================================================================================*/
+
+.about-me-h1{
+ font-size: 32px;  
+ text-align: center; 
+}
+
+.about-me-p{
+    text-align: center;
+    font-size: 14px;
+    padding: 0 20px;
+    margin-top: -20px;
+}
+
+.about-me-card2{
+    width: 90%;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.my-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.my-image2{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.right-side-aboutme{
+    width: 100%;
+}
+
+.about-me-description{
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.8;
+
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+
+/*My story timeline*/
+
+.my-story-h2{
+    font-size: 40px;
+}
+
+.main-line{
+    display: none;
+}
+
+
+.timeline-item{
+    flex-direction: column;
+    width: 95%;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+
+    order: 1;
+    width: 100%;
+    margin-bottom: 60px;
+
+}
+
+.timeline-right{
+    order: 2;
+    width: 100%;
+}
+
+
+.timeline-right,
+.timeline-left{
+    width: 100%;
+}
+
+.timeline-centre{
+    display: none;
+}
+
+.design{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.heading1{
+    font-size: 24px;
+}
+
+.heading2{
+    font-size: 18px;
+}
+
+.timeline-description{
+    font-size: 14px;
+}
+
+.year{
+    margin: 0 auto;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+
+
+/*============================================================================================================================================================================
+                                                                     MOBILE PROJECTS PAGE
+==============================================================================================================================================================================*/
+
+.heading-projects{
+    margin-top: 120px;
+    width: 95%;
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.heading{
+    font-size: 38px;
+}
+
+.design-is-not{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.heading-projects p{
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/*PROJECT CARDS*/
+.project-grid1{
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.project-container1{
+    flex-direction: column;
+    width: 95%;
+    max-width: 500px;
+    padding: 20px;
+    gap: 20px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-information{
+    width: 100%;
+    text-align: center;
+}
+
+.image-project{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    
+}
+
+.title-row{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-title1{
+    font-size: 22px;
+}
+
+.project-description{
+    max-width: 100%;
+    font-size: 15px;
+}
+
+.p-type{
+    justify-content: center;
+}
+
+
+.project-buttons{
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.view-p{
+    width: 100%;
+    max-width: 280px;
+}
+
+
+/*BOTTOM CTA*/
+
+.projects-cta{
+    width: 95%;
+    max-width: 500px;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.left-cta{
+    flex-direction: column;
+}
+
+.cta-paragraph{
+    margin-top: 10px;
+}
+
+.lets-work{
+    display: inline;
+}
+
+
+
+/*============================================================================================================================================================================
+                                                                     MOBILE SASSA CASESTUDY
+==============================================================================================================================================================================*/
+
+.case-hero{
+   width: 92%;
+   margin: 0 auto;
+
+   display: flex;
+   flex-direction: column;
+
+   align-items: center;
+   justify-content: center;
+
+   text-align: center;
+
+   padding: 20px;
+   box-sizing: border-box;
+}
+
+.hero-left,
+.hero-right, 
+.hero-right2,
+.hero-right3{
+    width: 100%;
+    max-width: 0;
+}
+
+.sassa-website,
+.sassa-w{
+    font-size: 42px;
+    line-height: 1.1;
+}
+
+.laptop-image{
+    width: 100%;
+    max-width: 300px;
+
+    margin: 20px auto 0 auto !important;
+    display: block;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+}
+
+.view-figma,
+.view-figma2,
+.view-figma3{
+    margin: 20px auto;
+    display: block;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.project1-infor{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    margin: 20px auto;
+}
+
+.project1-infor,
+.project3-infor{
+    flex-direction: column;
+    gap: 20px;
+    min-height: auto;
+    padding: 20px;
+}
+
+.about-sassa{
+    width: 95%;
+    margin: 60px auto;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+.process-grid{
+    grid-template-columns: 1fr;
+}
+
+.Research-information-section{
+    flex-direction: column;
+    align-items: center;
+}
+
+.research-cards{
+    width: 90%;
+}
+
+.all-cards{
+    flex-direction: column;
+    align-items: center;
+}
+
+.Persona-cards{
+    margin:0 auto;
+    text-align: left;
+}
+
+
+.reviews-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+}
+.circle,
+.circle4, 
+.blob{
+    display: none;
+}
+
+.about-project-container3,
+.app-infor, 
+.h2-screens,
+.screen-description{
+    margin-left: 0;
+}
+
+.circle-1,
+.circle-2,
+.circle-3,
+.phone-review{
+    display: none;
+}
+
+.review-1,
+.review-2,
+.review-3,
+.review-4{
+    position: static;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.wireframes{
+    flex-direction: column;
+    align-items: center;
+}
+
+.wireframes-img{
+    width: 90%;
+}
+
+.user-reviews-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screens-card{
+    flex-direction: column;
+    align-items: center;
+}
+
+.screens-card img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.reflection-section{
+    width: 95%;
+}
+
+.h2-about{
+    font-size: 26px;
+}
+
+.goals,
+.about-sassa,
+.design-process,
+.user-research,
+.user-Personas-section,
+.user-reviews-section,
+.wireframes,
+.final-ui-section,
+.reflection-section{
+    width: 95% !important;
+    max-width: 600px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.process-grid,
+.Research-information-section,
+.all-cards,
+.wireframes,
+.screens-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+.h2-about,
+.h2-about3,
+.design-process h2,
+.user-Personas-section h2,
+.user-reviews-section h2,
+.final-ui-section h2,
+.reflection-section h2{
+    text-align: center;
+
+}
+
+.about-project-container,
+.about-project-container2{
+    width: 100% !important;
+    max-width: 100% !important;
+}
+    
+/*============================================================================================================================================================================
+                                                                     PRODEMIC
+==============================================================================================================================================================================*/
+.case-hero{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-right{
+    margin-top: 20px;
+}
+
+.prodemic-image{
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+
+.about-sassa-g{
+    display: flex;
+   grid-template-columns: 1fr;
+    gap: 30px;
+
+    margin: 0 auto;
+}
+
+
+
+.design-process-section{
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.analysis-section{
+    flex-direction: column;
+    align-items: center;
+}
+
+.whole-infor-card{
+    width: 100%;
+}
+
+.app-infor{
+    grid-template-columns: 1fr;
+}
+
+
+.user-persona-prodemic{
+    flex-direction: column;
+}
+
+.user-persona-card{
+    width: 100%;
+}
+
+.whole-section-cards{
+    grid-template-columns: 1fr;
+}
+
+.section-screens{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.ui-screens{
+    
+    width: 100%;
+    max-width: 140px;
+    margin: 0 auto;}
+
+    
+
+.image-card,
+.whole-infor-card{
+    width: 100%;
+}
+
+.about-project-container3,
+.about-sassa-g,
+.design-process-section,
+.competitor-analysis-whole-section,
+.user-persona-prodemic{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.about-sassa{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.design-process-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.section-screens{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+
+.goals-card-2,
+.info-item-3{
+    width: auto;
+    min-height: 120px;
+}
+
+}
+/*============================================================================================================================================================================
+                                                                    E-COMMERCE MOBILE
+==============================================================================================================================================================================*/
+.case-hero{
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.hero-left{
+    width: 100%;
+}
+
+.prodemic-website3,
+.sassa-w3{
+    font-size: 42px;
+    width: 100%;
+    text-align: center;
+}
+
+.case-description{
+    max-width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.view-figma3{
+    margin: 20px auto;
+    display: block;
+}
+
+.hero-right2{
+   min-width: unset;
+   width: 100%;
+}
+
+.ubuntu-image3{
+    width: 100%;
+    margin: 0;
+}
+
+.mock-img2{
+    margin: 0;
+}
+
+.blob{
+    overflow: hidden;
+}
+
+.project-infor{
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+    padding: 20px;
+}
+
+.about-sassa{
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+}
+
+.about-project-container,
+.about-project-container2{
+    width: 100%;
+}
+
+
+
+
+.design-line-4{
+    display: none;
+}
+
+.info-item-4{
+    width: auto;
+}
+
+.user-persona-prodemic{
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-persona-card{
+    width: 95%;
+}
+
+.persona-content{
+    grid-template-columns: 1fr;
+}
+
+.persona-goals-card, 
+.persona-goals-card2,
+.persona-goals-card3,
+.persona-goals-card1{
+    width: auto;
+}
+
+.screens-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.screens-card img{
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    display: block;
+}
+.h2-about{
+    width: 100%;
+}
+.h2-about,
+.h2-about3{
+    font-size: 24px;
+}
+
+.back-to-project{
+    margin-left: 20px;
+}
+.about-sassa-g{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.project1-infor{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.infor-item-3{
+    min-height: 80px;
+    padding: 10px;
+
+}
+}
+.user-persona-prodemic{
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-persona-card{
+    width: 95%;
+}
+
+.persona-content{
+    grid-template-columns: 1fr;
+}
+
+.persona-goals-card, 
+.persona-goals-card2,
+.persona-goals-card3,
+.persona-goals-card1{
+    width: auto;
+}
+
+.screens-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.screens-card img{
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    display: block;
+}
+.h2-about{
+    width: 100%;
+}
+.h2-about,
+.h2-about3{
+    font-size: 24px;
+    margin-left: 0;
+}
+
+.back-to-project{
+    margin-left: 20px;
+}
+.about-sassa-g{
+
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;}
+
+.project1-infor{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.infor-item-3{
+    min-height: 80px;
+    padding: 10px;
+
+}
+.goal-card4 p{
+    font-family: 20px;
+}
+
+.circle1{
+    display: none;
+}
 
